@@ -1,7 +1,7 @@
 {
 	"name": "@ejc-tsds/array",
 	"version": "0.0.1",
-	"description": "",
+	"description": "A type-safe array implementation.",
 	"main": "dist/index",
 	"types": "dist/index",
 	"scripts": {
