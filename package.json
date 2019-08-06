@@ -29,7 +29,9 @@
 	"devDependencies": {
 		"@types/node": "latest",
 		"typescript": "latest",
-		"tslint": "latest"
+		"tslint": "latest",
+		"jest": "latest",
+		"@types/jest": "latest"
 	},
 	"files": [
 		"dist"
