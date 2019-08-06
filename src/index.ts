@@ -237,4 +237,10 @@ export class ArrayList<T> {
 
 	}
 
+	public fromArray(value: any[]): void {
+
+		this.array = value;
+
+	}
+
 }
