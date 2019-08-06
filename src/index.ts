@@ -22,7 +22,7 @@
  *
  */
 
-export class ArrayList<T> {
+export class ArrayList<T> implements Iterable<T> {
 
 	private array: Array<T>;
 
@@ -30,6 +30,24 @@ export class ArrayList<T> {
 
 		this.array = values;
 
+	}
+
+	public [Symbol.iterator](): Iterator<T> {
+
+		let index: number = 0;
+
+		return {
+			next: (): IteratorResult<T> => {
+
+				const value: T = this.array[index];
+				index++;
+
+				return {
+					done: index === this.size() + 1,
+					value: value
+				};
+			}
+		};
 	}
 
 	public get(index: number): T | undefined {
