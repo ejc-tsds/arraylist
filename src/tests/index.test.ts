@@ -22,11 +22,9 @@
  *
  */
 
-import { ArrayList as Arr } from "../index";
+import { ArrayList } from "../index";
 
 test("FOO", () => {
-
-
 
 	expect(2).toEqual(2);
 
